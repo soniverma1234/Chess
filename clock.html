@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>DIGITAL CLOCK</title>
+</head>
+<style>
+body{
+background:black;
+color:lightgreen;
+text-align:center;
+font-size:100px;
+font-family:digital-7;
+}
+div{
+height:300px;
+width:1000px;
+background:whita;
+border:15px groove blue;
+margin:0px auto;
+font-size:180px;
+line-height:350px;
+border-radius:30px;
+box-shadow:0px 0px 50px 5px skyblue,0px 0px 40px 5px skyblue, 0px 0px 50px 5px grey inset; 
+}
+</style>
+<body>
+DIGITAL CLOCK
+<div>TIME</div>
+<script>
+function demo(){
+var d=new Date()
+document.querySelector("div").innerText=d.tolocaleTimeString()
+}
+window.setInterval(demo,1000)
+</script>
+</body>
+</html>
